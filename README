@@ -1,0 +1,26 @@
+NAME - program.c
+
+USAGE - 
+$ make
+$ make run
+
+DESCRIPTION - 
+Parent creates a child process using fork() system call. Child process opens the Desktop directory and copies all the file names in this directory into a new created file "demo".
+
+Example -
+$ make
+gcc -c program.c
+gcc -o fileWrite program.o
+
+$ make run
+./fileWrite
+Parent:: terminating
+
+$ cat demo
+c
+b
+..
+.
+e
+a
+d
